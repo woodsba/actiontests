@@ -31,5 +31,5 @@ jobs:
       run: |
         git fetch origin
         git checkout ${{ matrix.branches }}
-        git merge origin/master
+        git merge origin/master --allow-unrelated-histories
         git push origin ${{ matrix.branches }}
