@@ -31,5 +31,5 @@ jobs:
       run: |
         git fetch origin
         git checkout ${{ matrix.branches }}
-        git merge master
+        git merge origin/master
         git push origin ${{ matrix.branches }}
