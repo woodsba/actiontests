@@ -19,7 +19,7 @@ jobs:
     
     strategy:
       matrix:
-        branches: [newbranch,branch-3,branch-4,branch-5,branch-6,branch-7,branch-8,branch-9,branch-10,branch-11,branch-12,branch-13,branch-14,branch-15,branch-16,branch-17,branch-18,branch-19,branch-20,branch-21,branch-22,branch-23]
+        branches: [master,newbranch,branch-3,branch-4,branch-5,branch-6,branch-7,branch-8,branch-9,branch-10,branch-11,branch-12,branch-13,branch-14,branch-15,branch-16,branch-17,branch-18,branch-19,branch-20,branch-21,branch-22,branch-23]
     
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
