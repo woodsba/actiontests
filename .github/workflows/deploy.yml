@@ -8,7 +8,13 @@ on:
       - completed
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Good Bye";
+	on-success:
+	    runs-on: ubuntu-latest
+	    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+	    steps:
+	      - run: echo "I Succeeded, Have a nice Day";
+	on-failure:
+	    runs-on: ubuntu-latest
+	    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+	    steps:
+	    	- run: echo "I Failed, Boo Hoo";
