@@ -38,3 +38,8 @@ jobs:
         git pull origin ${{ matrix.branches }}
         git pull origin master
         git push origin ${{ matrix.branches }}
+  hello:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World";
