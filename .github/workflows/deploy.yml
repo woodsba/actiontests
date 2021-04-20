@@ -1,0 +1,14 @@
+name: CI Deploy
+
+# Only trigger, when the build workflow succeeded
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Good Bye";
