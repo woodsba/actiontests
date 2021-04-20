@@ -42,4 +42,4 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World now good bye";
+      - run: echo "Hello World";
